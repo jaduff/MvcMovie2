@@ -30,17 +30,14 @@ namespace MvcMovie2
                 app.UseDeveloperExceptionPage();
             }
 
-            //app.Run(async (context) =>
-            //{
-            //    await context.Response.WriteAsync("Hello World!");
-            //});
+            app.UseStaticFiles();
 
-	    app.UseMvc(routes =>
-	    {
-		routes.MapRoute(
-			name: "default",
-			template: "{controller=HelloWorld}/{action=Index}/{id?}");
-		});
+            app.UseMvc(routes =>
+            {
+            routes.MapRoute(
+                name: "default",
+                template: "{controller=HelloWorld}/{action=Index}/{id?}");
+            });
         }
     }
 }
