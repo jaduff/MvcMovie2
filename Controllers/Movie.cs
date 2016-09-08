@@ -2,6 +2,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MvcMovie2.Models;
+using MvcMovie2.Data;
 
 namespace MvcMovie2.Controllers
 {
